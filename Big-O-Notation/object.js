@@ -46,19 +46,29 @@ function makeCharCount(str) {
   // make object to return at the end
   const result = {};
   // loop over the string, for each character do the following...
-  for (let i = 0; i < str.length; i++) {
-    // make a lowecase of the inputted string
-    const char = str[i].toLowerCase();
+  for (let char of str) {
     // if the char is something else (not a number or a letter), dont do anything
-    if (/^[a-z0-9]+$/i.test(char)) {
+    if (isAlphaNumeric(char)) {
+      // make a lowecase of the inputted string
+      char = char.toLowerCase();
       // If char is a anumber/letter and is not a key in the object, add to the object and set count to 1
-      if (!result[char]) result[char] = 1
+      if (!result[char]) result[char] = 1;
         // If the char is a number/letter and is a key in the object, increase count by 1
       else result[char]++;
     }
   }
   // return the object
   return result;
+}
+
+function isAlphaNumeric(char) {
+  let code = char.charCodeAt(0);
+  if (!(code > 47 && code < 58) && // numeric (0-9)
+      !(code > 67 && code < 91) && // upper alpha (A-Z)
+      !(code > 96 && code < 123)) { // upper alpha (A-Z)
+    return false
+  }
+  return true;
 }
 
 console.log(makeCharCount('Hello, this is a box'));
