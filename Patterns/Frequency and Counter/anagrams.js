@@ -88,4 +88,4 @@ const anagram3 = (str1, str2) => {
 }
 
 anagram3('qwerty', 'qeywrw')
-console.log(anagram3('aaz', 'aza'))
+console.log(anagram3('anagrams', 'nagaram'))
