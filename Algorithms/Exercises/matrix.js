@@ -136,4 +136,4 @@ function mattrix(n) {
 }
 
 
-console.log(mattrix(6git ))
+console.log(mattrix(6))
