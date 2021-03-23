@@ -10,10 +10,10 @@ function collectOddValues1(arr) {
 
     // the recursion works by checking the first value of an array for any recursion
     // if the first value of the array is a odd number
-    if (input[0] % 2 !== 0) result.push(input[0])
+    if (input[0] % 2 !== 0) result.push(input[0]);
 
    // call the function with new array
-    return helper(input.slice(1))
+    return helper(input.slice(1));
   }
 
   helper(arr);
