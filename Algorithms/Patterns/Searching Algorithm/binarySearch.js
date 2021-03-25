@@ -15,3 +15,5 @@ function binary(arr, size) {
 
   return arr[middle] === size ? middle : -1;
 }
+
+console.log(binary([1,2,3,4,5,6,7,8,9,12,1,3,14,16], 6))
