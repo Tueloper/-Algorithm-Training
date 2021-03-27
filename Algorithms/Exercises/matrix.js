@@ -101,7 +101,7 @@ function mattrix(n) {
   while (startColumn <= endColumn && startRow <= endRow) {
     // create the first row of arrays
     for (let i = startColumn; i <= endColumn; i++) {
-      results[startRow][i] = counter;
+      results [startRow][i] = counter;
       counter++
     }
 
