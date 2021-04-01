@@ -8,7 +8,7 @@ function selectionSort(arr) {
   let smallestNumber;
   for (let i = 0; i < arr.length; i++) {
     smallestNumber = i;
-    for (let j = arr.length - 1; j >= i; j--) {
+    for (let j = arr.length - 1; j >= i + 1; j--) {
       if (arr[smallestNumber] > arr[j]) smallestNumber = j;
     }
     if (i !== smallestNumber) {
