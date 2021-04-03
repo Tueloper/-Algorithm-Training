@@ -15,7 +15,6 @@ function merge(arr1, arr2) {
       j++;
     }
   }
-console.log(i, j)
   // incases where the above while loop doesn't exhaust the array
   // single loop
   while (i < arr1.length) {
