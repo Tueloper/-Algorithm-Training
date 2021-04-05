@@ -1,4 +1,6 @@
 // uisng merge sort
+// Merge sort works by seperating the array of numbers into one single array with each number in the array
+// and merging back in a sorted way through chunk merging
 
 function merge(arr1, arr2) {
   let results = [];
