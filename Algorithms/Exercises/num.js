@@ -22,7 +22,7 @@ var numDifferentIntegers = function(word) {
     }
   }
   
-  for (let key in object) {
+  for (let key in obj) {
     if (obj[key] === obj[key + 1]) {
       count = 1;
     }else count++;
