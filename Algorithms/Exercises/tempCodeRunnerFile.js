@@ -1,2 +1,5 @@
-.replace("[", "")
-  // .replace("]", "")
+ // .map((item) => {
+    //   return item
+    //     .replace('[', '')
+    //     .replace(']', '')
+    // });
