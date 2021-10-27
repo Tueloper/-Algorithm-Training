@@ -14,9 +14,11 @@ function palindroneCreator(str) {
 
       if (outcast !== '') {
         let newStr = str.replace(outcast, '');
-        const reversed = newStr.split('').reverse().join('');
-        if (newStr === reversed) {
-          resultOutcast = outcast;
+        if (newStr.length > 2) {
+          const reversed = newStr.split('').reverse().join('');
+          if (newStr === reversed) {
+            resultOutcast = outcast;
+          }
         }
       }
       
@@ -25,7 +27,7 @@ function palindroneCreator(str) {
     }
   }
   
-  if (resultOutcast !== '' && resultOutcast.length > 2) return resultOutcast;
+  if (resultOutcast !== '') return resultOutcast;
   else return "not impossible";
 }
 
